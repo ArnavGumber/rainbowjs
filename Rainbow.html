@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title>Rainbow.js</title>
+    <link rel="icon" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="description" content="The simplest JavaScript library to easily change text colors">
+    <meta name="keywords" content="JavaScript, Colors, Easiest">
+    <meta name="author" content="Arnav Gumber">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:title" property="og:title" content="Rainbow.js - The easiest way to change the color of the text">
+    <style>
+        #title {
+            font-size: 350%;
+            color: red;
+            text-shadow: 1px 1px orange, -1px -1px yellow, 2px 2px green, -2px -2px blue, 3px 3px indigo, -3px -3px violet;
+        }
+
+        #use, #what, #supported, #demo {
+            font-size: 250%;
+            margin-left: 2%;
+            font-style: italic;
+        }
+
+        #add, #do {
+            font-size: 175%;
+            margin-left: 4%;
+            font-variant: small-caps;
+        }
+
+        #logoImg {
+            height: auto;
+            width: 40%;
+            float: right;
+            padding-right: 30px;
+        }
+
+        #code {
+            font-size: 110%;
+            font-stretch: extra-expanded;
+            margin-left: 10%;
+        }
+        #copyBtn {
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            padding: 0 10px 0 10px;
+            font-size: 150%;
+            cursor: pointer;
+        }
+        #done, #easy {
+            font-size: 150%;
+            font-style: oblique;
+            margin-left: 5%;
+        }
+        #example, #output {
+            font-size: 200%;
+            margin-left: 3%;
+        }
+        #supcol {
+            margin-left: 5%;
+            width: 90%;
+            font-size: 125%;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="Logo.png" alt="Logo" height="70px" width="70px" style="position: absolute;">
+    <center>
+        <p id="title">Rainbow<i>.js</i></p>
+    </center>
+    <hr style="width: 75%;">
+    <img src="Logo.png" alt="Logo" id="logoImg">
+    <p id="use">How to use:</p>
+    <p id="add">Just add the following code after ending the &#60;body&#62; tag -</p>
+    <input type="text" id="code" value="https://arnavgumber.github.io/rainbowjs/rainbow.js">
+    <button id="copyBtn" onclick="copyText()">Copy</button>
+    <br>
+    <p id="done">And you are done</p>
+    <br>
+    <p id="what">What it does:</p>
+    <p id="do">It has some more built-in tags with the name of colors which may help you a lot by changing the colors</p>
+    <p id="example">Example - <code>&#60;red&#62;Red colored text&#60;/red&#62;</code></p>
+    <p id="output">Output - <span style="color: red;">Red colored text</span></p>
+    <br>
+    <p id="example">Another example - <code>&#60;blue&#62;Blue colored text&#60;/blue&#62;</code></p>
+    <p id="output">Output - <span style="color: blue;">Blue colored text</span></p>
+    <p id="easy">Made the work easy, right</p>
+    <br>
+    <p id="supported">Colors which are supported:</p>
+    <p id="supcol">
+        Aqua, Black, Blue, Brown, Chocolate, Cornsilk, Crimson, Cyan, Darkblue, Darkcyan, Darkgray, Darkgreen, Darkorange, Darkred, Deepink, Gold, Gray, Green, Lightblue, Lightcyan, Lightgray, Lightpink, Lightyellow, Lime, Magenta, Maroon, Mediumblue, Navy, Orange, Orangered, Pink, Purple, Red, Royalblue, Silver, Skyblue, Teal, Tomato, Violet, Wheat, White, Whitesmoke, Yellow, Yellowgreen
+    </p>
+    <p id="demo"><a href="Rainbow JS test.html">See demo</a></p>
+</body>
+<script>
+    function copyText() {
+        let code = document.getElementById("code");
+        code.select();
+        document.execCommand("copy");
+        document.getElementById("copyBtn").innerHTML = "Copied";
+        setInterval(function() {
+            document.getElementById("copyBtn").innerHTML = "Copy";
+        }, 10000);
+    }
+</script>
+
+</html>
