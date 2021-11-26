@@ -1,3 +1,12 @@
+/*
+
+Rainbow.js
+
+Programmed by - Arnav Gumber
+Website - https://arnavgumber.github.io/codeinfinitewitharnav
+
+*/
+
 //red
 var red = document.querySelectorAll("red");
 var red1;
