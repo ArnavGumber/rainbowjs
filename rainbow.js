@@ -271,3 +271,19 @@ var yellowgreen1;
 for (yellowgreen1 = 0; yellowgreen1 < yellowgreen.length; yellowgreen1++) {
 yellowgreen[yellowgreen1].style.color = "yellowgreen";
 }
+
+/* 
+Colors ends from here
+*/
+
+//random
+var random = document.querySelectorAll("random");
+var random1;
+var randomArr = ['blue','red','green','crimson','deeppink','lime','cyan','orangered','gold','silver'];
+
+setInterval(function() {
+    var randomArr1 = Math.floor(Math.random() * 10);
+    for (random1 = 0; random1 < random.length; random1++) {
+    random[random1].style.color = randomArr[randomArr1];
+    }
+},500);
