@@ -7,6 +7,8 @@ Website - https://arnavgumber.github.io/codeinfinitewitharnav
 
 */
 
+console.log('%cThis website is using Rainbow.js\nYou can use it also in your website for free\nSee this - https://arnavgumber.github.io/rainbowjs', 'background:cyan;font-size:80%;');
+
 //red
 var red = document.querySelectorAll("red");
 var red1;
