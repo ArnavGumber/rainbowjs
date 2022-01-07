@@ -289,3 +289,12 @@ setInterval(function() {
     random[random1].style.color = randomArr[randomArr1];
     }
 },500);
+
+
+//Attriutes
+
+var color = document.querySelectorAll("[color]");
+var color1;
+for (color1 = 0; color1 < color.length; color1++) {
+    color[color1].style.color = color[color1].getAttribute("color");
+}
